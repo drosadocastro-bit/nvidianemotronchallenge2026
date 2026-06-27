@@ -12,6 +12,12 @@ This is not the live Manatuabon application.
 - Records the submission trail without committing heavyweight binaries
 - Separates historical challenge artifacts from the live Manatuabon runtime
 
+## Start Here
+
+- `LESSONS_LEARNED.md`: what worked, what changed, and what this archive preserves
+- `TIMELINE.md`: chronological view of the competition workflow and later consolidation
+- `PROJECT_STATUS.md`: current archive scope and what remains external
+
 ## What This Archive Contains
 
 - `kaggle_pipeline.py` and `kaggle_ensemble_mix.py`: synthetic reasoning dataset generation
