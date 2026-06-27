@@ -1,0 +1,20 @@
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+
+*.pyc
+*.pyo
+
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.gguf
+
+submission*.zip
+downloads/kaggle.json
+downloads/kaggle (1).json
+
+artifacts/
