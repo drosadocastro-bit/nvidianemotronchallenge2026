@@ -56,4 +56,6 @@ This challenge work is historically useful because it shows:
 - what was shipped as competition submissions
 - which artifacts later influenced Manatuabon's local-model direction
 
-It should be read as a lessons-learned engineering archive, not as the source of truth for the live observatory.
+Operational software evolves. Experiment become history. Lessons become reusable knowledge.
+
+This repository preserve that history so future work can build on documented experience instead of rediscovering it.
