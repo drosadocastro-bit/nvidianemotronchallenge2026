@@ -27,15 +27,20 @@
 - `drive_colab/train_lora_colab.ipynb`
 - `drive_colab/train_lora_colab (1).ipynb`
 - `drive_colab/train_lora_colab (2).ipynb`
-- `drive_colab/train_lora_colab (3).ipynb`
 - `drive_colab/train_lora_colab (4).ipynb`
-- `drive_colab/train_lora_colab (5).ipynb`
 - `drive_colab/unsloth_colab_microtune.ipynb`
-- `drive_colab/Copy of unsloth_colab_microtune.ipynb`
 - `drive_lora/README.md`
 - `drive_lora/adapter_config.json`
 - `drive_lora/chat_template.jinja`
 - `drive_lora/tokenizer_config.json`
+
+## Drive Notebook Variants Removed From The Public Archive
+
+- `drive_colab/train_lora_colab (3).ipynb`
+- `drive_colab/train_lora_colab (5).ipynb`
+- `drive_colab/Copy of unsloth_colab_microtune.ipynb`
+
+These were trimmed from the public archive because they appeared to be incomplete or low-value duplicate variants.
 
 ## External Assets Confirmed But Not Copied
 

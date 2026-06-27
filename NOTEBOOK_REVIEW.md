@@ -37,6 +37,16 @@ This review focuses on the notebooks imported into `drive_colab/` and identifies
 
 ## Recommended Public Strategy
 
+The public archive has now been trimmed accordingly:
+
+1. `train_lora_colab (3).ipynb` was removed
+2. `train_lora_colab (5).ipynb` was removed
+3. `Copy of unsloth_colab_microtune.ipynb` was removed
+
+The stronger notebook variants remain in place.
+
+## Prior Review Logic
+
 If the goal is a cleaner public-facing archive while still preserving history:
 
 1. keep all notebooks in git for now because they are part of the historical record
