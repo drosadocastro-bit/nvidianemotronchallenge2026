@@ -15,17 +15,28 @@ Recommendation:
 
 ## Google Drive / Colab Imports
 
-If you have notebooks or exported files on Google Drive, check for:
+Imported from the mounted Drive already:
+
+1. Nemotron Colab notebooks from `G:\My Drive\Colab Notebooks`
+2. lightweight adapter metadata from `G:\My Drive\nemotron_reasoning_lora`
+
+Still worth checking for additional imports:
 
 1. intermediate Colab notebooks not already present here
 2. training logs or screenshots that explain failed or successful runs
 3. alternate dataset snapshots
-4. exported adapter config variants
+4. exported adapter config variants not already represented
 5. markdown notes or TODO files that explain parameter sweeps
 
 Suggested import rule:
 - keep notebooks, markdown notes, small JSON, and small CSV files
 - exclude credentials, API keys, mounted-drive secrets, and large binary weights
+
+Mounted heavy artifacts intentionally not imported:
+
+1. `adapter_model.safetensors`
+2. `tokenizer.json`
+3. checkpoint directories under `G:\My Drive\nemotron_reasoning_lora`
 
 ## Secrets To Exclude
 

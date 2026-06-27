@@ -23,6 +23,8 @@ The live observatory runtime remains in Manatuabon and should stay there.
 - `synthetic_cot.jsonl`, `synthetic_cot_grandmaster.jsonl`, `master_ensemble_dataset.jsonl`: training corpora
 - `train.csv`, `test.csv`: challenge data snapshot currently available locally
 - `downloads/`: extra notebooks and scratch files found in Downloads
+- `drive_colab/`: mounted Google Drive Colab notebook variants imported from `G:\My Drive\Colab Notebooks`
+- `drive_lora/`: lightweight metadata imported from `G:\My Drive\nemotron_reasoning_lora`
 
 ## What Stays In Manatuabon
 
@@ -40,11 +42,12 @@ Those files depend on Nemotron as a live model backend for the observatory. They
 Large or environment-specific files were intentionally left out of this archive staging folder:
 - `submission.zip` through `submission15.zip` in Downloads
 - LoRA adapter weights inside those submission ZIPs
-- any Google Drive synced notebook copies that are not mounted on this machine
+- LoRA adapter weights and checkpoint directories from `G:\My Drive\nemotron_reasoning_lora`
+- any additional Google Drive notebook copies outside the imported Nemotron set
 - Colab runtime outputs saved outside this workspace
 - `kaggle.json` credentials files
 
-See `EXTERNAL_IMPORT_CHECKLIST.md` for the follow-up import list.
+See `EXTERNAL_IMPORT_CHECKLIST.md` for the follow-up import list and `DRIVE_LORA_MANIFEST.md` for the mounted adapter inventory.
 
 ## Why This Archive Exists
 

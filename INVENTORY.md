@@ -21,6 +21,22 @@
 - `downloads/kaggle_inference_v2.ipynb`
 - `downloads/github_colab_todo.py`
 
+## Files Imported From Google Drive
+
+- `drive_colab/nemotron_self_play_vllm.ipynb`
+- `drive_colab/train_lora_colab.ipynb`
+- `drive_colab/train_lora_colab (1).ipynb`
+- `drive_colab/train_lora_colab (2).ipynb`
+- `drive_colab/train_lora_colab (3).ipynb`
+- `drive_colab/train_lora_colab (4).ipynb`
+- `drive_colab/train_lora_colab (5).ipynb`
+- `drive_colab/unsloth_colab_microtune.ipynb`
+- `drive_colab/Copy of unsloth_colab_microtune.ipynb`
+- `drive_lora/README.md`
+- `drive_lora/adapter_config.json`
+- `drive_lora/chat_template.jinja`
+- `drive_lora/tokenizer_config.json`
+
 ## External Assets Confirmed But Not Copied
 
 - `C:\Users\draku\Downloads\nvidia-nemotron-model-reasoning-challenge.zip`
@@ -50,6 +66,15 @@ These are intentionally excluded from version control because they are large bin
 
 ## Google Drive / Colab Status
 
-Common local Google Drive sync folders were checked and no Nemotron-related files were visible from this machine at those paths.
+The mounted Drive locations were available and the Nemotron-related notebook set was imported from:
 
-That means any extra Colab notebooks or Drive-only copies should be imported manually into this archive later if they still matter.
+- `G:\My Drive\Colab Notebooks`
+- `G:\My Drive\nemotron_reasoning_lora`
+
+Heavy Drive-only artifacts were still left out on purpose:
+
+- `adapter_model.safetensors`
+- `tokenizer.json`
+- checkpoint directories `checkpoint-10` through `checkpoint-180`
+
+See `DRIVE_LORA_MANIFEST.md` for the recorded mounted-folder summary.

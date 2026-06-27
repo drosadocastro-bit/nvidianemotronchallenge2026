@@ -6,7 +6,8 @@
 2. Confirm `submission*.zip` files are still excluded.
 3. Confirm no `.safetensors` or other large model binaries were copied in.
 4. Review `downloads/` for anything that is too scratch-like to publish.
-5. Add any Drive-only notebooks you still want preserved.
+5. Review `drive_colab/` for duplicate notebook variants you may want to trim.
+6. Decide whether any additional Drive-only notebooks still need to be preserved.
 
 ## Suggested First Commit Scope
 

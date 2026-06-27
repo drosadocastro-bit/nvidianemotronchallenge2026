@@ -12,9 +12,13 @@ venv/
 *.bin
 *.safetensors
 *.gguf
+*.ckpt
 
 submission*.zip
 downloads/kaggle.json
 downloads/kaggle (1).json
+drive_lora/adapter_model.safetensors
+drive_lora/tokenizer.json
+drive_lora/checkpoint-*/
 
 artifacts/

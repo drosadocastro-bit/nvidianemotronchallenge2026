@@ -7,13 +7,16 @@ This repository is a historical archive.
 - dataset-generation scripts
 - preserved training corpora
 - competition demo and training notebooks
+- imported Google Drive Colab notebook variants
+- imported lightweight LoRA metadata
 - archive documentation explaining what belongs here
 
 ## What Is Experimental Or External
 
 - submission ZIP sequence in Downloads
 - adapter weights inside the submission archives
-- Google Drive and Colab-only notebook copies not present locally
+- heavy LoRA checkpoints and weight files from the mounted Drive folder
+- additional Google Drive and Colab-only notebook copies not present locally
 
 ## What Is Not Included On Purpose
 
