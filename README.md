@@ -1,53 +1,46 @@
 # NVIDIA Nemotron Reasoning Challenge Archive
 
-This archive preserves the historical competition work that fed into the early Nemotron experimentation around Manatuabon.
+Historical archive of my NVIDIA Nemotron 2026 reasoning challenge workflow, preserving synthetic reasoning data generation, Colab fine-tuning notebooks, LoRA packaging, inference experiments, and lessons learned.
 
-It is not the live Manatuabon application.
+This is not the live Manatuabon application.
 
-The purpose of this archive is to keep:
-- the Kaggle and Colab training flow
-- the synthetic reasoning dataset generation scripts
-- the demo and inference notebooks
-- the submission history and external artifacts trail
+## At A Glance
 
-The live observatory runtime remains in Manatuabon and should stay there.
+- Preserves the competition training and inference workflow
+- Keeps the synthetic reasoning dataset generation scripts
+- Captures Colab, Kaggle, and local Nemotron experiment paths
+- Records the submission trail without committing heavyweight binaries
+- Separates historical challenge artifacts from the live Manatuabon runtime
 
 ## What This Archive Contains
 
-- `kaggle_pipeline.py`: builds the synthetic reasoning training traces
-- `kaggle_ensemble_mix.py`: merges legacy and CoVe-style traces into the final ensemble dataset
-- `nemotron_self_play_vllm.py`: local self-play and LoRA inference experiment
+- `kaggle_pipeline.py` and `kaggle_ensemble_mix.py`: synthetic reasoning dataset generation
+- `nemotron_self_play_vllm.py`: local experiment path
 - `nvidia-nemotron-submission-demo.ipynb`: competition demo notebook snapshot
-- `train_lora_colab.ipynb`: Colab LoRA training notebook
-- `train_manatuabon_qlora_colab.ipynb`: later QLoRA notebook connected to the broader project direction
-- `synthetic_cot.jsonl`, `synthetic_cot_grandmaster.jsonl`, `master_ensemble_dataset.jsonl`: training corpora
-- `train.csv`, `test.csv`: challenge data snapshot currently available locally
-- `downloads/`: extra notebooks and scratch files found in Downloads
-- `drive_colab/`: mounted Google Drive Colab notebook variants imported from `G:\My Drive\Colab Notebooks`
-- `drive_lora/`: lightweight metadata imported from `G:\My Drive\nemotron_reasoning_lora`
+- `train_lora_colab.ipynb` and `train_manatuabon_qlora_colab.ipynb`: training notebook path
+- `synthetic_cot.jsonl`, `synthetic_cot_grandmaster.jsonl`, `master_ensemble_dataset.jsonl`: preserved training corpora
+- `downloads/`: extra local notebook and scratch artifacts from Downloads
+- `drive_colab/`: imported Google Drive Colab notebook variants
+- `drive_lora/`: lightweight metadata from the mounted LoRA export
+
+For the detailed inventory, see `INVENTORY.md`.
 
 ## What Stays In Manatuabon
 
-The following are active application surfaces, not archive material:
-- the packaged Nemotron runtime client in `manatuabon/core/nemotron_client.py`
-- query/chat bridge integration in `manatuabon/bridge/manatuabon_bridge.py`
-- ingest and consolidation agents under `manatuabon/core/`
-- council/governance logic under `manatuabon/governance/`
-- active tests and operational docs tied to the observatory runtime
+The live Nemotron-backed observatory code remains in Manatuabon, especially the runtime client, bridge integration, ingest path, governance path, tests, and operational docs.
 
-Those files depend on Nemotron as a live model backend for the observatory. They should not be moved into this archive repo.
+Those files are part of the current application contract and should not be moved into this archive repo. For the exact split, see `ACTIVE_VS_ARCHIVE.md`.
 
 ## External Assets Not Vendored Here
 
-Large or environment-specific files were intentionally left out of this archive staging folder:
-- `submission.zip` through `submission15.zip` in Downloads
-- LoRA adapter weights inside those submission ZIPs
-- LoRA adapter weights and checkpoint directories from `G:\My Drive\nemotron_reasoning_lora`
-- any additional Google Drive notebook copies outside the imported Nemotron set
-- Colab runtime outputs saved outside this workspace
-- `kaggle.json` credentials files
+Large or environment-specific files were intentionally left out:
 
-See `EXTERNAL_IMPORT_CHECKLIST.md` for the follow-up import list and `DRIVE_LORA_MANIFEST.md` for the mounted adapter inventory.
+- submission ZIP archives
+- LoRA weight binaries and checkpoint directories
+- additional Drive-only notebook copies not imported here
+- Colab runtime outputs and credentials files
+
+See `EXTERNAL_IMPORT_CHECKLIST.md`, `DRIVE_LORA_MANIFEST.md`, and `SUBMISSION_HISTORY.md` for the recorded external trail.
 
 ## Why This Archive Exists
 
@@ -57,4 +50,4 @@ This challenge work is historically useful because it shows:
 - what was shipped as competition submissions
 - which artifacts later influenced Manatuabon's local-model direction
 
-It should be read as a lessons-learned engineering archive, not as the canonical source for the live observatory.
+It should be read as a lessons-learned engineering archive, not as the source of truth for the live observatory.
